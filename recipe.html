@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Keeper - Recipe Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Recipe Keeper</h1>
+        <h3>Add And Manage Your Recipes</h3>
+    </header>
+
+    <div class="container">
+
+        <a href="index.html" id="home">Save The Recipe And Back To Homepage</a>
+
+        <form>
+            <div class="form-group">
+                <label>Recipe Name</label>
+                <input type="text" id="recipe-name" placeholder="The name of the recipe" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Recipe Steps</label>
+                <textarea id="steps" class="form-control" rows="10" placeholder="The steps of the recipe"></textarea>
+            </div>
+        </form>
+
+        <div>
+            <h2 class="ingredient-title">Ingredients</h2>
+            <p class="ingredient-p">Check the ingredients you have</p>
+
+            <div id="ingredients-list"></div>
+        </div>
+
+        <form>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <input type="text" id="ingredient-input" placeholder="Add Ingredient" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <button id="confirm-ingredient" class="btn">ADD</button>
+            </div>
+        </div>
+        </form>
+
+        <div class="danger-zone">
+            <h2 class="danger">DANGER ZONE</h2>
+            <p class="danger-msg">You won't be able to retrieve your recipe after deleting it</p>
+            <button id="delete-recipe" class="btn delete">Delete Recipe</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="scripts/uuid.js"></script>
+    <script src="scripts/recipes-functions.js"></script>
+    <script src="scripts/recipes-recipe.js"></script>
+</body>
+
+</html>
